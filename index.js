@@ -1,18 +1,11 @@
 import express from 'express'; //載入express框架模組
-// import cors from 'cors'; 
 import bodyParser from 'body-parser';
-
-import * as dotenv from 'dotenv';
-dotenv.config();
-
 
 
 let app = express();
 
 
-// app.use(cors({
-//     origin: '*',
-// }));
+
 
 app.use(bodyParser.json());
 
