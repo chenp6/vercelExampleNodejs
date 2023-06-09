@@ -12,20 +12,6 @@
     "routes": [{
             "src": "/",
             "dest": "public/index.html"
-        },
-        {
-            "src": "/group.html",
-            "dest": "public/group.html"
-        },
-        {
-            "src": "/css/loadingHamster.css",
-            "dest": "public/css/loadingHamster.css"
-        }, {
-            "src": "/LICENSE.txt",
-            "dest": "LICENSE.txt"
-        }, {
-            "src": "/(.+)",
-            "dest": "/"
         }
     ]
 }
