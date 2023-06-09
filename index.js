@@ -4,15 +4,15 @@ import bodyParser from 'body-parser';
 
 let app = express();
 
+app.use(bodyParser.json()); //使用JSON形式進行傳遞
 
-
-
-app.use(bodyParser.json());
-
+//server開始聆聽client
 app.listen(5000, () => {
     console.log(new Date() + "開始監聽port 5000!");
 });
 
+
+// GET /users/{email}
 app.get("/users/:email", (req, res) => {
     const email = req.params.email;
     if (email == 'test@gmail.com') {
@@ -22,7 +22,7 @@ app.get("/users/:email", (req, res) => {
     }
 });
 
-
+// POST /users
 app.post("/users", (req, res) => {
     const email = req.body.email;
     if (email == 'test@gmail.com') {
