@@ -30,8 +30,8 @@ app.get("/users/:email", async(req, res) => {
 app.post("/users", async(req, res) => {
     const email = req.body.email;
     if (email == 'test@gmail.com') {
-        return res.status(200).json({ 'username': 'testing' });
+        return res.status(200).json({ 'status': 'success' });
     } else {
-        return res.status(200).json({ 'username': null });
+        return res.status(200).json({ 'status': 'failed' });
     }
 });
