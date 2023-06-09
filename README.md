@@ -1,5 +1,5 @@
 # vercelExampleNodejs
-## 一個部署至vercel的Nodejs serverless function範例
+## 部署至vercel的Nodejs serverless function範例
 ## 範例
 (純為範例，並未串接資料庫)   
 
