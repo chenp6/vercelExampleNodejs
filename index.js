@@ -25,3 +25,13 @@ app.get("/users/:email", async(req, res) => {
         return res.status(200).json({ 'username': null });
     }
 });
+
+
+app.post("/users", async(req, res) => {
+    const email = req.body.email;
+    if (email == 'test@gmail.com') {
+        return res.status(200).json({ 'username': 'testing' });
+    } else {
+        return res.status(200).json({ 'username': null });
+    }
+});
