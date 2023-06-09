@@ -13,8 +13,8 @@ app.use(cors({
 }));
 
 
-app.listen(3000 || process.env.PORT, () => {
-    console.log(new Date() + "開始監聽port 3000!");
+app.listen(5000, () => {
+    console.log(new Date() + "開始監聽port 5000!");
 });
 
 app.get("/username", async(req, res) => {
