@@ -17,7 +17,7 @@ app.listen(5000, () => {
     console.log(new Date() + "開始監聽port 5000!");
 });
 
-app.get("/users/:email", async(req, res) => {
+app.get("/users/:email", (req, res) => {
     const email = req.params.email;
     if (email == 'test@gmail.com') {
         return res.status(200).json({ 'username': 'testing' });
@@ -27,7 +27,7 @@ app.get("/users/:email", async(req, res) => {
 });
 
 
-app.post("/users", async(req, res) => {
+app.post("/users", (req, res) => {
     const email = req.body.email;
     if (email == 'test@gmail.com') {
         return res.status(200).json({ 'status': 'success' });
