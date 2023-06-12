@@ -12,7 +12,7 @@ app.listen(5000, () => {
 });
 
 
-// GET /users/{email}
+// GET /users/:email
 app.get("/users/:email", (req, res) => {
     const email = req.params.email;
     if (email == 'test@gmail.com') {
