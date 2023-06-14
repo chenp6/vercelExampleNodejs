@@ -13,7 +13,7 @@ app.listen(5000, () => {
 
 
 // GET /users/:email/:name
-app.get("/users/:email/:name", (req, res) => {
+app.get("/users/:email", (req, res) => {
     const email = req.params.email;
     if (email == 'test@gmail.com') {
         return res.status(200).json({ 'username': 'testing',"name":"nameTest" });
