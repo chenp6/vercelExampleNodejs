@@ -12,11 +12,11 @@ app.listen(5000, () => {
 });
 
 
-// GET /users/:email
-app.get("/users/:email", (req, res) => {
+// GET /users/:email/:name
+app.get("/users/:email/:name", (req, res) => {
     const email = req.params.email;
     if (email == 'test@gmail.com') {
-        return res.status(200).json({ 'username': 'testing' });
+        return res.status(200).json({ 'username': 'testing',"name":"nameTest" });
     } else {
         return res.status(200).json({ 'username': null });
     }
