@@ -6,7 +6,7 @@
 ### 獲得User
 Retrieves username of user by email.   
 Method: GET   
-Endpoint: /users/:email     
+Endpoint: /users/:email/:name     
 
 ### 建立User  
 Creates a new user.    
