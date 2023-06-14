@@ -5,9 +5,9 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [    {
-         "src": "/users/([^/]+)/([^/]+)",
-         "dest": "/api/users/:email/:name"
+    "routes": [{
+        "src": "/users/([^/]+)/([^/]+)",
+        "dest": "/index.js"
     },
     {
         "src": "/(.+)",
